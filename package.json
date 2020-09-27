@@ -1,0 +1,19 @@
+{
+  "name": "zzq",
+  "version": "0.0.1",
+  "description": "元气壁纸使用教程",
+  "main": "index.js",
+  "authors": {
+    "name": "zhangzequan",
+    "email": "hengwujun128@gmail.com"
+  },
+  "repository": "/zzq",
+  "scripts": {
+    "dev": "vuepress dev src",
+    "build": "vuepress build src"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^1.5.3"
+  }
+}
