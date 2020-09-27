@@ -4,7 +4,7 @@ module.exports = {
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#title
    */
-  title: '元气壁纸官方文档',
+  title: '元气壁纸文档',
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#description
    */
@@ -52,16 +52,16 @@ module.exports = {
       //   link: 'https://v1.vuepress.vuejs.org',
       // },
       // 下拉列表
-      {
-        text: 'GitHub',
-        items: [
-          { text: 'GitHub地址', link: 'https://github.com/OBKoro1' },
-          {
-            text: '算法仓库',
-            link: 'https://github.com/OBKoro1/Brush_algorithm',
-          },
-        ],
-      },
+      // {
+      //   text: 'AboutMe',
+      //   items: [
+      //     { text: 'GitHub地址', link: 'https://github.com/OBKoro1' },
+      //     {
+      //       text: '算法仓库',
+      //       link: 'https://github.com/OBKoro1/Brush_algorithm',
+      //     },
+      //   ],
+      // },
     ],
     /**
      * 这里是配置每个页面的 sidebar,每个页面可以有不同 sidebar;
