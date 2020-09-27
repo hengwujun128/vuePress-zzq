@@ -1,15 +1,15 @@
 const { description } = require('../../package')
-
+const sideBars = require('./sidebar')
 module.exports = {
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#title
    */
-  title: '元气壁纸文档',
+  title: "Martin's blog",
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#description
    */
   description: description,
-
+  dest: './dist',
   /**
    * Extra tags to be injected to the page HTML `<head>`
    *  注入到当前页面的 HTML <head> 中的标签中的
@@ -36,7 +36,7 @@ module.exports = {
     docsDir: '',
     editLinkText: '',
     // sidebarDepth: 2, // e'b将同时提取markdown中h2 和 h3 标题，显示在侧边栏上。
-    lastUpdated: 'Last Updated', // 文档更新时间：每个文件git最后提交的时间
+    lastUpdated: '最后更新时间', // 文档更新时间：每个文件git最后提交的时间
     // 顶部的 navigation,内部链接 以src为根目录
     nav: [
       {
@@ -46,6 +46,10 @@ module.exports = {
       {
         text: 'Config',
         link: '/config/',
+      },
+      {
+        text: '元气壁纸',
+        link: '/yuanqi/',
       },
       // {
       //   text: 'VuePress',
@@ -85,6 +89,13 @@ module.exports = {
           title: 'Config',
           collapsable: false,
           children: ['', 'my-test'], // 文件名称
+        },
+      ],
+      '/yuanqi/': [
+        {
+          title: '元气壁纸', //最顶级
+          collapsable: false,
+          children: ['', 'myWallPapers', 'staticWallPapers'], // 文件名称 作为 children
         },
       ],
     },
