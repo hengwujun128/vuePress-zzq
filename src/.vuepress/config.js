@@ -1,5 +1,6 @@
 const { description } = require('../../package')
-const sideBars = require('./sidebar')
+const { yuanqiSidebars } = require('./sidebar')
+const { publicNav } = require('./nav')
 module.exports = {
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#title
@@ -38,35 +39,7 @@ module.exports = {
     // sidebarDepth: 2, // e'b将同时提取markdown中h2 和 h3 标题，显示在侧边栏上。
     lastUpdated: '最后更新时间', // 文档更新时间：每个文件git最后提交的时间
     // 顶部的 navigation,内部链接 以src为根目录
-    nav: [
-      {
-        text: 'Guide',
-        link: '/guide/',
-      },
-      {
-        text: 'Config',
-        link: '/config/',
-      },
-      {
-        text: '元气壁纸',
-        link: '/yuanqi/',
-      },
-      // {
-      //   text: 'VuePress',
-      //   link: 'https://v1.vuepress.vuejs.org',
-      // },
-      // 下拉列表
-      // {
-      //   text: 'AboutMe',
-      //   items: [
-      //     { text: 'GitHub地址', link: 'https://github.com/OBKoro1' },
-      //     {
-      //       text: '算法仓库',
-      //       link: 'https://github.com/OBKoro1/Brush_algorithm',
-      //     },
-      //   ],
-      // },
-    ],
+    nav: [...publicNav],
     /**
      * 这里是配置每个页面的 sidebar,每个页面可以有不同 sidebar;
      * 也可以在 每个文件夹的的 READEME.md 直接配置,如,config
@@ -95,7 +68,7 @@ module.exports = {
         {
           title: '元气壁纸', //最顶级
           collapsable: false,
-          children: ['', 'myWallPapers', 'staticWallPapers'], // 文件名称 作为 children
+          children: yuanqiSidebars(), // 文件名称 作为 children
         },
       ],
     },
@@ -108,7 +81,7 @@ module.exports = {
   configureWebpack: {
     resolve: {
       alias: {
-        '@alias': 'path/to/some/dir',
+        '@alias': '../',
       },
     },
   },
