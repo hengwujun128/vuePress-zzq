@@ -54,7 +54,7 @@ module.exports = {
         {
           title: 'Guide', //最顶级
           collapsable: false,
-          children: ['', 'using-vue'], // 文件名称 作为 children
+          children: [''], // 文件名称 作为 children
         },
       ],
       '/shared-es/': [
