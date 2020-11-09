@@ -57,9 +57,9 @@ module.exports = {
           children: ['', 'using-vue'], // 文件名称 作为 children
         },
       ],
-      '/config/': [
+      '/shared-es/': [
         {
-          title: 'Config',
+          title: 'Shared-es',
           collapsable: false,
           children: ['', 'my-test'], // 文件名称
         },

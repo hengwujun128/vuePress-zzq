@@ -1,4 +1,4 @@
-# this is config home page
+# cf-modal component
 
 ## foo
 
@@ -15,6 +15,7 @@
 :::
 
 <demo-component />
+
 <script>
 // alert(134)
 </script>

@@ -4,8 +4,8 @@ var publicNav = [
     link: '/guide/',
   },
   {
-    text: 'Config',
-    link: '/config/',
+    text: 'Shared-es',
+    link: '/shared-es/',
   },
   {
     text: '元气壁纸',

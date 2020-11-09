@@ -9,6 +9,7 @@ function yuanqiSidebars(type = '') {
     '/yuanqi/report/serverReport.md',
     '/yuanqi/cache/video.md',
     '/yuanqi/channel/addChannel.md',
+    '/yuanqi/upload/upload.md',
   ]
   // 读取目录文件
   return mapArr.map((i) => {
