@@ -1,22 +1,18 @@
 # cf-modal component
 
-## foo
+## 功能展示
 
 - Type: `string`
 - Default: `/`
 
-## bar
+## 对外接口
 
 - Type: `string`
 - Default: `/`
 
-::: tip
-这是一个提示
-:::
 
 <demo-component />
 
 <script>
-// alert(134)
 </script>
-### Badge <Badge text="beta" type="warning"/> <Badge text="默认主题"/>
+### 使用方式 <Badge text="beta" type="warning"/> <Badge text="默认主题"/>
