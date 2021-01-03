@@ -71,6 +71,13 @@ module.exports = {
           children: yuanqiSidebars(), // 文件名称 作为 children
         },
       ],
+      '/unitTest/': [
+        {
+          title: 'unitTest',
+          collapsable: false,
+          children: ['', 'TestTemplate.md', 'Tips.md'], // 文件名称
+        },
+      ],
     },
   },
 

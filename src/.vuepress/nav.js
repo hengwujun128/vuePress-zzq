@@ -1,8 +1,8 @@
 var publicNav = [
-  {
-    text: 'Guide',
-    link: '/guide/',
-  },
+  // {
+  //   text: 'Guide',
+  //   link: '/guide/',
+  // },
   {
     text: 'Shared-es',
     link: '/shared-es/',
@@ -11,10 +11,10 @@ var publicNav = [
     text: '元气壁纸',
     link: '/yuanqi/',
   },
-  // {
-  //   text: 'VuePress',
-  //   link: 'https://v1.vuepress.vuejs.org',
-  // },
+  {
+    text: 'VueUnitTest',
+    link: '/unitTest/',
+  },
   // 下拉列表
   // {
   //   text: 'AboutMe',
